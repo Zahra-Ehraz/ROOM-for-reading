@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Reading Room</title>
+  <link rel="stylesheet" href="https://cloudflare.com">
+  <link rel="stylesheet" href="syntax.css">
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION -->
+  <header>
+    <div class="logo-container">
+      <i class="fa-solid fa-book-open logo-icon"></i>
+      <div class="logo-text">
+        <h1>The Reading Room</h1>
+        <p>Read • Dream • Discover</p>
+      </div>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="#" class="active-link">Home</a></li>
+        <li><a href="#">Books <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a href="#">Categories <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div class="header-actions">
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search for books...">
+      </div>
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </div>
+      <div class="profile-icon">
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-tagline">Welcome to The Reading Room</span>
+      <h2>A Book for Every Dream</h2>
+      <p class="hero-description">Explore our collection of inspiring books and find your next favourite read.</p>
+      <a href="#" class="btn-browse">Browse Books <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <div class="category-card">
+      <i class="fa-solid fa-book"></i>
+      <span>Fiction</span>
+    </div>
+    <div class="category-card">
+      <i class="fa-solid fa-flask"></i>
+      <span>Science</span>
+    </div>
+    <div class="category-card">
+      <i class="fa-solid fa-landmark"></i>
+      <span>History</span>
+    </div>
+    <div class="category-card">
+      <i class="fa-solid fa-brain"></i>
+      <span>Psychology</span>
+    </div>
+    <div class="category-card">
+      <i class="fa-solid fa-feather-pointed"></i>
+      <span>Literature</span>
+    </div>
+    <div class="category-card">
+      <i class="fa-solid fa-child"></i>
+      <span>Children's Books</span>
+    </div>
+    <div class="category-card">
+      <i class="fa-solid fa-gift"></i>
+      <span>Gifts</span>
+    </div>
+  </section>
+
+  <!-- FEATURED BOOKS -->
+  <section class="featured">
+    <div class="section-header">
+      <h3>Featured Books</h3>
+      <a href="#" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="featured-grid">
+      <!-- Promo Side Card -->
+      <div class="promo-card">
+        <div>
+          <h4>Read More. Grow More.</h4>
+          <p>Get 20% OFF on your first order!</p>
+        </div>
+        <a href="#" class="btn-promo">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Book Item 1 -->
+      <div class="book-card">
+        <div class="book-cover-placeholder" style="background: #EED3B1;">Atomic Habits</div>
+        <div class="book-title">Atomic Habits</div>
+        <div class="book-author">James Clear</div>
+        <div class="book-pricing">
+          <span class="current-price">$14.99</span>
+          <span class="old-price">$19.99</span>
+        </div>
+        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+      </div>
+
+      <!-- Book Item 2 -->
+      <div class="book-card">
+        <div class="book-cover-placeholder" style="background: #113243; color: white;">The Midnight Library</div>
+        <div class="book-title">The Midnight Library</div>
+        <div class="book-author">Matt Haig</div>
+        <div class="book-pricing">
+          <span class="current-price">$13.99</span>
+          <span class="old-price">$17.99</span>
+        </div>
+        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+      </div>
+
+      <!-- Book Item 3 -->
+      <div class="book-card">
+        <div class="book-cover-placeholder" style="background: #FFF1DF;">Dopamine Nation</div>
+        <div class="book-title">Dopamine Nation</div>
+        <div class="book-author">Dr. Anna Lembke</div>
+        <div class="book-pricing">
+          <span class="current-price">$13.99</span>
+          <span class="old-price">$19.99</span>
+        </div>
+        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+      </div>
+
+      <!-- Book Item 4 -->
+      <div class="book-card">
+        <div class="book-cover-placeholder" style="background: #EAE6DF;">Deep Work</div>
+        <div class="book-title">Deep Work</div>
+        <div class="book-author">Cal Newport</div>
+        <div class="book-pricing">
+          <span class="current-price">$12.99</span>
+          <span class="old-price">$16.99</span>
+        </div>
+        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+      </div>
+
+      <!-- Book Item 5 -->
+      <div class="book-card">
+        <div class="book-cover-placeholder" style="background: #1E3E34; color: white;">The Seven Husbands of Evelyn Hugo</div>
+        <div class="book-title">The Seven Husbands of Evelyn Hugo</div>
+        <div class="book-author">Taylor Jenkins Reid</div>
+        <div class="book-pricing">
+          <span class="current-price">$14.99</span>
+          <span class="old-price">$18.99</span>
+        </div>
+        <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES BAR -->
+  <section class="values-bar">
+    <div class="value-item">
+      <i class="fa-solid fa-truck"></i>
+      <div class="value-text">
+        <h5>Free Shipping</h5>
+        <p>on orders over $50</p>
+      </div>
+    </div>
+    <div class="value-item">
+      <i class="fa-solid fa-headset"></i>
+      <div class="value-text">
+        <h5>24/7 Customer Support</h5>
+        <p>We're here to help</p>
+      </div>
+    </div>
+    <div class="value-item">
+      <i class="fa-solid fa-shield-halved"></i>
+      <div class="value-text">
+        <h5>Secure Payment</h5>
+        <p>Shop with confidence</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <span>Follow Us:</span>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <script src="syntax.js"></script>
+</body>
+</html>
